@@ -74,8 +74,7 @@ export function Product() {
         photo_path: reference.fullPath,
       })
       .then(() => Alert.alert("Cadastro", "Pizza cadastrada com sucesso."))
-      .catch(
-        (error) => console.log(error),
+      .catch(() =>
         Alert.alert("Cadastro", "Não foi possível cadastrar a pizza.")
       )
       .finally(() => setIsLoading(false));
